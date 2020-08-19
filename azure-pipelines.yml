@@ -14,7 +14,7 @@ variables:
 
 steps:
 - script: 
-    docker build -f Dockerfile -t pipelines-dotnet-core:dev .
+    #docker build -f Dockerfile -t pipelines-dotnet-core:dev .
     docker image ls
-    docker tag pipelines-dotnet-core:dev maven2.it.volvo.net:18516/pipelines-dotnet-core:dev
-    docker image ls
+    #docker tag pipelines-dotnet-core:dev maven2.it.volvo.net:18516/pipelines-dotnet-core:dev
+    #docker image ls
