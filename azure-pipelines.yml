@@ -13,7 +13,8 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: docker build Dockerfile -t pipelines-dotnet-core:dev .
+- script: 
+    docker build -f Dockerfile -t pipelines-dotnet-core:dev .
     docker image ls
     docker tag pipelines-dotnet-core:dev maven2.it.volvo.net:18516/pipelines-dotnet-core:dev
     docker image ls
